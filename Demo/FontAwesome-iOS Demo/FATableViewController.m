@@ -186,6 +186,7 @@
         tmp[@"icon-star"]           = @(FAIconStar);
         tmp[@"icon-star-empty"]     = @(FAIconStarEmpty);
         tmp[@"icon-user"]           = @(FAIconUser);
+        tmp[@"icon-user-plus"]           = @(FAIconUserPlus);
         tmp[@"icon-film"]           = @(FAIconFilm);
         tmp[@"icon-th-large"]       = @(FAIconThLarge);
         tmp[@"icon-th"]             = @(FAIconTh);

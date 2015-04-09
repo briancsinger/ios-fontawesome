@@ -48,7 +48,7 @@
     static dispatch_once_t unicodeStringsOnceToken;
     dispatch_once(&unicodeStringsOnceToken, ^{
         
-        fontAwesomeUnicodeStrings = @[@"\uf000", @"\uf001", @"\uf002", @"\uf003", @"\uf004", @"\uf005", @"\uf006", @"\uf007", @"\uf008", @"\uf009",
+        fontAwesomeUnicodeStrings = @[@"\uf000", @"\uf001", @"\uf002", @"\uf003", @"\uf004", @"\uf005", @"\uf006", @"\uf007", @"\uf234", @"\uf008", @"\uf009",
                                       @"\uf00a", @"\uf00b", @"\uf00c", @"\uf00d", @"\uf00e", @"\uf010", @"\uf011", @"\uf011", @"\uf012", @"\uf013",
                                       @"\uf013", @"\uf014", @"\uf015", @"\uf016", @"\uf017", @"\uf018", @"\uf019", @"\uf01a", @"\uf01b", @"\uf01c",
                                       @"\uf01d", @"\uf01e", @"\uf01e", @"\uf021", @"\uf022", @"\uf023", @"\uf024", @"\uf025", @"\uf026", @"\uf027",
@@ -90,7 +90,7 @@
                                       @"\uf1f1", @"\uf1f9", @"\uf201", @"\uf1ed", @"\uf205", @"\uf1eb", @"\uf1fa", @"\uf1e5", @"\uf20a", @"\uf1f4",
                                       @"\uf1fb", @"\uf208", @"\uf20c", @"\uf200", @"\uf1e7", @"\uf1f8", @"\uf1e9", @"\uf1f6", @"\uf1fd", @"\uf1f3",
                                       @"\uf1f5", @"\uf1e3", @"\uf202", @"\uf1ea", @"\uf1e6", @"\uf1e4"];
-
+        
     });
     
     return fontAwesomeUnicodeStrings;
@@ -98,12 +98,12 @@
 
 + (NSDictionary *)enumDictionary {
     
-	static NSDictionary *enumDictionary;
+    static NSDictionary *enumDictionary;
     
     static dispatch_once_t enumDictionaryOnceToken;
     dispatch_once(&enumDictionaryOnceToken, ^{
         
-		NSMutableDictionary *tmp = [[NSMutableDictionary alloc] init];        
+        NSMutableDictionary *tmp = [[NSMutableDictionary alloc] init];
         tmp[@"icon-glass"]          = @(FAIconGlass);
         tmp[@"icon-music"]          = @(FAIconMusic);
         tmp[@"icon-search"]         = @(FAIconSearch);
@@ -112,6 +112,7 @@
         tmp[@"icon-star"]           = @(FAIconStar);
         tmp[@"icon-star-empty"]     = @(FAIconStarEmpty);
         tmp[@"icon-user"]           = @(FAIconUser);
+        tmp[@"icon-user-plus"]      = @(FAIconUserPlus);
         tmp[@"icon-film"]           = @(FAIconFilm);
         tmp[@"icon-th-large"]       = @(FAIconThLarge);
         tmp[@"icon-th"]             = @(FAIconTh);
@@ -520,8 +521,8 @@
         tmp[@"icon-newspaper-o"]     = @(FANewspaperO);
         tmp[@"icon-plug"]     = @(FAPlug);
         tmp[@"icon-tty"]     = @(FATty);
-		enumDictionary = tmp;
-	});
+        enumDictionary = tmp;
+    });
     
     return enumDictionary;
 }
